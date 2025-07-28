@@ -1,10 +1,13 @@
 const express = require("express");
-const app = express()
-
 const path = require("path");
 const { error } = require("console");
-const PORT = process.env.PORT || 3000;
+const mongoose = require('mongoose');
+require("dotenv").config();
 
+
+const COSTUMER = require("./models/costumer.js")
+const app = express()
+const PORT = process.env.PORT || 8000;
 
 
 
@@ -13,13 +16,7 @@ app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
 app.use(express.static(path.join(__dirname, "public")));
 
-const mongoose = require('mongoose');
-require("dotenv").config();
-
-const COSTUMER = require("./models/costumer.js")
-await mongoose.connect(process.env.MONGO_URI);
-
-
+// await mongoose.connect(process.env.MONGO_URI);
 
 // main()
 //     .then(() => {
@@ -43,15 +40,12 @@ mongoose.connect(process.env.MONGODB_URI, {
 // routes
 
 app.post("/msg", async (req, res) => {
-    // console.log(req.body)
     const { Cname , Cemail , Cmsg } = req.body;
-    // console.log(Cname, Cemail, Cmsg)
-
     let newmsg = new COSTUMER({
         name:Cname,
         email:Cemail,
         msg:Cmsg
-    })
+    });
 
     await newmsg.save().then((res) => {
         console.log(res)
