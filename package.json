@@ -1,7 +1,7 @@
 {
   "name": "DeepVegetableCompany",
   "version": "1.0.0",
-  "main": "app.cjs",
+  "main": "app.js",
   "engines": {
     "node": "20.x"
   },
