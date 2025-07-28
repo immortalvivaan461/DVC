@@ -17,16 +17,27 @@ const mongoose = require('mongoose');
 const COSTUMER = require("./models/costumer.js")
 
 
-main()
-    .then(() => {
-        console.log("connection successfully")
-    })
-    .catch(err => console.log(err));
+// main()
+//     .then(() => {
+//         console.log("connection successfully")
+//     })
+//     .catch(err => console.log(err));
 
-async function main() {
-    await mongoose.connect('mongodb://127.0.0.1:27017/costumerdata');
+// async function main() {
+//     await mongoose.connect('mongodb://127.0.0.1:27017/costumerdata');
 
-}
+// }
+// mongodb connection
+mongoose.connect(process.env.MONGODB_URI, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+})
+.then(() => console.log("✅ MongoDB connected"))
+.catch((err) => console.error("❌ MongoDB connection error:", err));
+
+
+// routes
+
 app.post("/msg", async (req, res) => {
     // console.log(req.body)
     const { Cname , Cemail , Cmsg } = req.body;
