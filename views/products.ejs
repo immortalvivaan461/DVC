@@ -1,0 +1,47 @@
+<%- include("includes/header.ejs") %>
+    <link rel="stylesheet" href="/css/products.css">
+    </head>
+
+    <body>
+        <header>
+            <%- include("includes/navbar.ejs") %>
+                <div class="hero">
+                    <h1>Our Products</h1>
+                    <hr class="custom-hr">
+                </div>
+        </header>
+        <main>
+            <section id="Our_Products">
+                <div class="row products">
+                    <div class="col-10 col-lg-3 product">
+                        <img src="/img/grains.png" alt="Spices-img">
+                        <h1 class="py-3">SPICES</h1>
+                        <a href="/spices">See More Details</a>
+                    </div>
+                    <div class="col-10 col-lg-3 product">
+                        <img src="/img/vegetables.png" alt="veg-img">
+                        <h1 class="py-3">VEGETABLES</h1>
+                        <a href="/vegetables">See More Details</a>
+                    </div>
+                    <div class="col-10 col-lg-3 product">
+                        <img src="/img/grain.png" alt="grains-img">
+                        <h1 class="py-3">GRAINS</h1>
+                        <a href="/grains">See More Details</a>
+                    </div>
+                    <div class="col-10 col-lg-3 product">
+                        <img src="/img/fruits.png" alt="fruits-img">
+                        <h1 class="py-3">FRUITS</h1>
+                        <a href="/fruits">See More Details</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <%- include("includes/dbtn.ejs") %>
+        <%- include("includes/footer.ejs") %>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+                crossorigin="anonymous"></script>
+    </body>
+
+    </html>

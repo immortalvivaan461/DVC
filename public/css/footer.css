@@ -1,0 +1,126 @@
+footer {
+    background-image: url(/img/product-bg.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footer-main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+
+.input-itm {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.footer-left {
+    border: 1px solid black;
+    padding: 40px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    background-image: linear-gradient(to top, rgba(224, 224, 224, 0.6) 0%, #80a633 90%), url(/img/transport.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footer-right {
+    background-color: #80a633;
+}
+
+.footer-info {
+    margin-left: 10%;
+    overflow: hidden;
+}
+
+.footer-info>h1 {
+    font-family: "Teko", sans-serif;
+    font-size: clamp(3rem, 5vw, 4rem);
+    /* color: whitesmoke; */
+}
+
+.footer-info>p {
+    font-family: 'Lato', Helvetica, Arial, Lucida, sans-serif;
+    font-size: clamp(1rem, 1.5vw, 1.25rem);
+}
+
+.inputs {
+    width: 70%;
+    font-size: clamp(1.5rem, 3vw, 1.75rem);
+    background-color: rgba(0, 0, 0, 0.15);
+    color: white;
+    border: none;
+
+}
+
+.inputs::placeholder {
+    color: white !important;
+}
+
+.msg-box {
+    height: 175px;
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+form {
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.snd-msg-btn {
+    align-self: center;
+    border: none;
+    padding-left: 5%;
+    padding-right: 5%;
+    border-radius:  5px;
+    margin-bottom: 10px;
+    text-wrap: nowrap;
+}
+
+.snd-msg-btn:hover{
+    background-color: #65822c;
+    color: aliceblue;
+}
+
+.footer-nav{
+    background-color: rgba(33, 33, 33, 0.934);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.footer-nav>a{
+    text-decoration: none;
+    padding: 5px;
+    padding-right: 20px;
+    color: gray;
+    font-weight: 500;
+}
+
+.footer-nav>a:hover{
+    border-bottom: 2px solid orangered;
+}
+
+.links{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: black;
+}
+.bi{
+    color: gray;
+}
+.bi:hover{
+    color: unset;
+}

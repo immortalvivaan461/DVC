@@ -1,0 +1,47 @@
+<footer>
+    <div class="row footer-main m-0">
+        <div class="col-10 col-lg-6 footer-left">
+            <div id="contact" class="footer-info">
+                <h1><b>GET IN TOUCH</b></h1>
+                <p>📞 +91 9953393099</p>
+            </div>
+            <div class="footer-info">
+                <h3><b>📍location</b></h3>
+                <p>D-433 New Subzi Mandi,
+                    <br>
+                    Azadpur Delhi 110033
+                </p>
+                <h4><b>Email</b></h4>
+                <p>✉️ deepvegetablesco@gmail.com</p>
+            </div>
+        </div>
+        <div class="col-10 col-lg-6 footer-right p-0">
+            <form action="/msg" method="POST">
+                <div class="input-itm">
+                    <h2 class="pt-5 pb-2"><b>Send A Message</b></h2>
+                    <input class="my-2 inputs ps-2" name="Cname" type="text" placeholder="Name">
+                    <input class="my-2 inputs ps-2" type="email" name="Cemail" placeholder="Email">
+                    <textarea class="my-3 inputs msg-box ps-2" name="Cmsg" id="" placeholder="Message"></textarea>
+                    <% if (alert) { %>
+                        <p>
+                            ✅<%= alert %>
+                        </p>
+                    <% } %>
+
+                </div>
+                <button class="snd-msg-btn py-1 fs-3 fw-semibold">Send Message</button>
+            </form>
+        </div>
+    </div>
+    <div class="footer-nav">
+        <a href="/home">Home</a>
+        <a href="/aboutus">About Us</a>
+        <a href="/products">Our Products</a>
+        <a href="#contact">Contact Us</a>
+    </div>
+    <div class="links">
+        <a href="https://www.facebook.com/deepvegetablesco/" target="_blank" class="me-3"><i class="bi bi-facebook fs-1"></i></a>
+        <a href="https://www.linkedin.com/company/deep-vegetables-company/" target="_blank" class="me-3"><i class="bi bi-linkedin fs-1"></i></a>
+        <a href="https://www.instagram.com/deepvegetablescompany/?igsh=MTljbGF3amZjNG8zMw%3D%3D#" target="_blank" class="me-5"><i class="bi bi-instagram fs-1"></i></a>
+    </div>
+</footer>

@@ -1,0 +1,217 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: azure;
+}
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/img/bg3.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 900px;
+}
+
+
+/* about-section */
+#about {
+    background-image: linear-gradient(to top, rgba(224, 224, 224, 0.6) 0%, rgb(255, 255, 255) 90%), url(/img/bg4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about-data {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0%;
+}
+
+.about-txt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about-us {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Our-txt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+article>h1 {
+    font-family: "Teko", sans-serif;
+    font-size: clamp(2rem, 4vw, 3.5rem);
+}
+
+article>p {
+    font-family: 'Lato', Helvetica, Arial, Lucida, sans-serif;
+    font-size: clamp(1rem, 1.5vw, 1.25rem);
+}
+
+/* Our-Products */
+
+#Our_Products {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(/img/paper-texture.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.product-heading {
+    margin-top: 40px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.product-heading>h1 {
+    font-family: "Teko", sans-serif;
+    font-size: clamp(3rem, 5vw, 4rem);
+}
+
+.custom-hr {
+    height: 5px;
+    width: 90%;
+    background: #80a633;
+}
+
+.products {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.product {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    border: 1px solid gray;
+    margin: 40px;
+}
+
+.product>img {
+    width: 100%;
+}
+
+.product>h1 {
+    font-family: "Teko", sans-serif;
+    font-size: clamp(2.5rem, 4vw, 3rem);
+}
+
+.product>a {
+    text-decoration: none;
+    padding: 10px;
+    border: 1px solid green;
+    color: #95BD43;
+    font-family: "Teko", sans-serif;
+    letter-spacing: 2px;
+    font-size: larger;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.product>a:hover {
+    border: none;
+    background-color: #95BD43;
+    color: rgb(255, 255, 255);
+    padding-left: 18px;
+    padding-right: 18px;
+}
+
+/* more-about-us section */
+
+#more-about-us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(/img/product-bg.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.more-about-us-heading {
+    margin-top: 40px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.more-about-us-heading>h1 {
+    font-family: "Teko", sans-serif;
+    font-size: clamp(3rem, 5vw, 4rem);
+    color: whitesmoke;
+}
+
+.comment-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cmts {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 5px;
+    border: 1px solid gray;
+    margin: 10px;
+    color: whitesmoke;
+
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+
+@media (max-width: 1200px) {
+    .about-us {
+        width: 80%;
+    }
+}
+
+@media (max-width: 992px) {
+    .about-us {
+        width: 100%;
+    }
+
+    .products {
+        justify-content: center;
+    }
+}
